@@ -1,0 +1,113 @@
+.section-task {
+    padding: 66px 0 38px;
+    position: relative;
+    border-bottom: 1px solid #e1e1e1;
+    overflow: hidden;
+    
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        width: 68px;
+        height: 68px;
+        background-color: #a4eecb;
+    }
+    	
+    @media (min-width: 768px) {
+        padding: 65px 0 40px;
+
+        &::before {
+            display: none;
+        }
+	}
+
+	@media (min-width: 1200px) {
+        padding: 90px 0 25px;
+
+        &::before {
+            display: block;
+            left: unset;
+            top: 50%;
+            left: 0;
+            padding: 0;
+            transform: translate(-50%, -50%) rotate(45deg);
+            width: 130px;
+            height: 130px;
+            background-color: #a4eecb;
+        }
+	}
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+        	
+    @media (min-width: 768px) {
+        flex-direction: row-reverse;
+        align-items: unset;
+        padding-left: 25px;
+        padding-right: 30px;
+	}
+
+	@media (min-width: 1200px) {
+        padding-left: 100px;
+        padding-right: 150px;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.task-content {
+    max-width: 290px;
+    text-align: center;
+    padding-bottom: 50px;
+            	
+    @media (min-width: 768px) {
+        max-width: 381px;
+        text-align: left;
+        padding-top: 15px;
+        padding-left: 5px;
+    }
+
+	@media (min-width: 1200px) {
+        max-width: 470px;
+        padding-top: 50px;
+        padding-left: 0;
+    }
+}
+
+.task-img {
+    width: 202px;
+
+    @media (min-width: 768px) {
+		width: 275px;
+	}
+
+	@media (min-width: 1200px) {
+        width: 356px;
+		
+	}
+}
+
+
+.task-img img {
+    width: 200px;
+    height: 342px;
+
+    @media (min-width: 768px) {
+        max-width: 100%;
+        height: auto;
+        vertical-align: top;
+        
+    }
+
+	@media (min-width: 1200px) {
+        width: 100%;
+        height: 100%;
+        margin-left: 0; 
+    }
+}

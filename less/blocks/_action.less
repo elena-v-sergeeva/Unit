@@ -1,0 +1,91 @@
+.section-action {
+	position: relative;
+	background-image: url(../img/action/action-iphone.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 74px;
+	background-color: rgb(10, 130, 78);
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(10, 130, 78, 0.7);
+	}
+
+		
+	@media (min-width: 768px) {
+		background-image: url(../img/action/action-ipad.jpg);
+		padding-top: 67px;
+		padding-bottom: 80px;
+	}
+
+	@media (min-width: 1200px) {
+		background-image: url(../img/action/img-action.jpg);
+		padding-top: 80px;
+		padding-bottom: 110px;
+	}
+}
+
+.action-content {
+  	position: relative;
+}
+
+.action-title {
+	font-size: 22px;
+	line-height: 1.36;
+	margin-bottom: 37px;
+	font-weight: 500;
+			
+	@media (min-width: 768px) {
+		margin-bottom: 52px;	
+		  
+	}
+
+	@media (min-width: 1200px) {
+		margin-bottom: 67px;	
+	}
+}
+
+.unit-name {
+	letter-spacing: 2.8px;
+	font-weight: bold;
+}
+
+.action-title .action-unit-name {
+	font-weight: 700;
+	letter-spacing: 2.2px;
+}
+
+.button-action {
+	background-color: #ffffff;
+	font-size: 14px;
+	color: #2bb279;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0 43px;
+	border-radius: 30px;
+	border: none;
+	cursor: pointer;
+	height: 60px;
+	letter-spacing: 2.8px;
+	padding: 20px 42px;
+	text-decoration: none;
+
+	transition: background-color 0.2s ease-in;
+
+	&:hover,
+	&:focus {
+		background-color: rgba(10, 130, 78, 0.7); 
+		color: #fff;
+	}
+}
